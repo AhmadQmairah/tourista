@@ -1,0 +1,80 @@
+.fill 
+{
+    
+    position:fixed;
+    width:100%;
+    height:1200px;
+    top:55px;
+    left:0px;
+    z-index:1000;
+     background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+   
+
+}
+
+.MyImg:hover
+{
+	transform:scale(1.5);
+	z-index: 1000
+}
+
+.DestinationName
+{
+	filter: brightness(100%);
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	color:White;
+	font-size:90px;
+	padding-top:40px;
+	z-index: 4;
+}
+
+.DestinationDescripion
+{
+	font-size:30;
+	padding-top:40px;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: bold;
+	color:#f1c11a;
+	
+}
+
+
+
+.MyButton,.MyButton2
+{
+	
+	font-size:30px;
+	border:0.5px solid white;
+	color:white;
+	font-family: 'Rajdhani', sans-serif;
+	
+	margin-left:400px
+	
+}
+.MyButton2
+{
+	font-size:30px;
+	border:0.5px solid white;
+	color:white;
+	font-family: 'Rajdhani', sans-serif;
+	margin-left:100px
+	
+}
+.MyButton:hover
+{
+	color:white;
+	background-color:#f1c11a;
+	border-color:#f1c11a;
+	text-decoration:none;
+}
+
+.MyButton2:hover
+{
+	color:white;
+	background-color:#dc3545;
+	border-color:#dc3545;
+	text-decoration:none;
+}

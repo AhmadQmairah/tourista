@@ -1,16 +1,39 @@
 {% extends "base.html" %} 
 
 {% block title %}List{% endblock title %}
+{% block test %}
+<style >
+.fill {
 
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb");
+
+
+
+}
+</style>
+
+{% endblock test %}
 {% block content %}
 <br>
-<div class="row">
-  {% for destination in destinations %}
-  <a href="{% url 'destination-detail' destination.id %}">
-    <img src="{{destination.pretty_picture.url}}" />
-    <p>{{destination.name}}</p>
-    <p>{{destination.activities}}</p>
-  </a>
-  {% endfor %}
+
+<div class="row ">
+
+	{% for destination in destinations %}
+	<div class="col-12 col-sm-10 col-md-6 col-lg-4 col-lx-4">
+		
+	
+
+
+	<div class="card mt-4 ml-auto mr-auto animated zoomIn" style="width: 18rem;">
+		<img class="card-img-top MyImg" src="{{destination.pretty_picture.url}}" alt="Card image cap" style="max-width:286px ;max-height: 160px">
+		<div class="card-body">
+			<h5 class="card-title">{{destination.name}}</h5>
+			<p class="card-text" style="min-width:400x ;min-height: 110px">{{destination.activities}}  </p>
+			<a href="{% url 'destination-detail' destination.id %}" class="btn btn-primary ">Read More...</a>
+		</div>
+	</div>
+	</div>
+	{% endfor %}
 </div>
+
 {% endblock content %}

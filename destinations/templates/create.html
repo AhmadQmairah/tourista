@@ -4,9 +4,12 @@
 {% block title %}Create{% endblock title %}
 
 {% block content %}
-<form action="{% url 'destination-create' %}" method="POST" enctype="multipart/form-data">
-  {% csrf_token %}
-  {{form.as_p}}
-  <input type="submit" value="Create">
-</form>
+<form action="" method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+	<div class="jumbotron my-5 ml-5" >
+
+		{{form|crispy}}
+		<input type="submit" value="Create" class="btn btn-success btn-block">
+	</form>
+</div>
 {% endblock content %}
